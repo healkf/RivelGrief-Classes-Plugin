@@ -1,0 +1,24 @@
+name: healkftwo
+version: '1.0'
+main: healkf.healkftwo.Healkftwo
+api-version: 1.20
+author: healkf
+
+commands:
+  setclass:
+    description: Установить класс игроку
+    usage: /setclass <игрок> <класс>
+  unlockclass:
+      description: Разблокировать закрытый класс для игрока
+      usage: /unlockclass <игрок> <класс>
+  classmenu:
+    description: Открыть меню выбора класса (сам/другому игроку)
+    usage: /classmenu [игрок]
+    permission: healkftwo.menu
+    permissions:
+      healkftwo.menu:
+        description: Открыть своё меню классов
+        default: false
+      healkftwo.admin:
+      description: Админские права плагина
+      default: op
